@@ -122,9 +122,7 @@
     table {
         margin-top: -20px;
         width: 100%;
-        /* Ancho de la tabla */
         border-collapse: collapse;
-        /* Colapsar bordes */
     }
 
     td {
