@@ -22,117 +22,234 @@
 
 
 
-body {
-    font-family: 'Oufit';
-    font-size: 18px;
-    font-weight: normal;
-    display: flex;
-    justify-content: center;
-    color: #5f565b;
-    background-color: #f3e5d8;
+@media (min-width: 600px) {
+    body {
+        font-family: 'Oufit';
+        font-size: 18px;
+        font-weight: normal;
+        display: flex;
+        justify-content: center;
+        color: #5f565b;
+        background-color: #f3e5d8;
+    }
+
+    h1 {
+        font-family: 'YoungSerif';
+        color: #393835;
+        margin-bottom: 10px;
+    }
+
+    h2 {
+        font-family: 'YoungSerif';
+        color: #783e2b;
+    }
+
+    p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    hr {
+        width: 100%;
+        margin-top: 28px;
+    }
+
+
+    ol {
+        padding-left: 1em;
+        margin: 0px;
+        margin-bottom: 16px;
+    }
+
+    ul {
+        padding-left: 1em;
+        margin: 0px;
+
+    }
+
+    li {
+        margin-top: 1em;
+        padding-left: 20px;
+    }
+
+
+    li::marker {
+        color: #783e2b;
+        font-weight: bold;
+    }
+
+    .lista-morada::marker {
+        color: #6d2d47;
+    }
+
+    .principal-container {
+        width: 50%;
+        margin-top: 6%;
+        margin-bottom: 6%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        padding: 50px;
+        background-color: white;
+    }
+
+    .omelette-image {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .container-tiempo {
+        border-radius: 20px;
+        background-color: #fff7fc;
+        padding: 30px;
+    }
+
+    .titulo-2 {
+        color: #6d2d47;
+        margin-top: 0px;
+    }
+
+    .valor-nutricional {
+        font-size: large;
+    }
+
+    .valor {
+        color: #783e2b;
+        font-family: 'Oufit';
+        font-weight: bold;
+    }
+
+    table {
+        margin-top: -20px;
+        width: 100%;
+        /* Ancho de la tabla */
+        border-collapse: collapse;
+        /* Colapsar bordes */
+    }
+
+    td {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 2em;
+        border-bottom: 1px solid #3a3536;
+    }
+
+
+    tr:last-child td {
+        border-bottom: none;
+    }
+
 }
 
-h1 {
-    font-family: 'YoungSerif';
-    color: #393835;
-    margin-bottom: 10px;
-}
+@media (max-width: 600px) {
 
-h2 {
-    font-family: 'YoungSerif';
-    color: #783e2b;
-}
+    body {
+        margin: 0px;
+        font-family: 'Oufit';
+        font-size: 17px;
+        color: #5f565b;
+    }
 
-p {
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
+    .div-pading {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 
-hr {
-    width: 100%;
-    margin-top: 28px;
-}
+    h1 {
+        font-family: 'YoungSerif';
+        color: #393835;
+        margin-bottom: 10px;
+    }
 
+    h2 {
+        font-family: 'YoungSerif';
+        color: #783e2b;
+    }
 
-ol {
-    padding-left: 1em;
-    margin: 0px;
-    margin-bottom: 16px;
-}
+    p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
 
-ul {
-    padding-left: 1em;
-    margin: 0px;
-
-}
-
-li {
-    margin-top: 1em;
-    padding-left: 20px;
-}
+    hr {
+        width: 100%;
+        margin-top: 28px;
+    }
 
 
-li::marker {
-    color: #783e2b;
-}
+    ol {
+        padding-left: 1em;
+        margin: 0px;
+        margin-bottom: 16px;
+    }
 
-.lista-morada::marker {
-    color: #6d2d47;
-}
+    ul {
+        padding-left: 1em;
+        margin: 0px;
 
-.principal-container {
-    width: 50%;
-    margin-top: 6%;
-    margin-bottom: 6%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    padding: 50px;
-    background-color: white;
-}
+    }
 
-.omelette-image {
-    width: 100%;
-    border-radius: 20px;
-}
-
-.container-tiempo {
-    border-radius: 20px;
-    background-color: #fff7fc;
-    padding: 30px;
-}
-
-.titulo-2 {
-    color: #6d2d47;
-    margin-top: 0px;
-}
-
-.valor-nutricional {
-    font-size: large;
-}
-
-.valor {
-    color: #783e2b;
-    font-family: 'Oufit';
-    font-weight: bold;
-}
-
-table {
-    margin-top: -20px;
-    width: 100%;
-    /* Ancho de la tabla */
-    border-collapse: collapse;
-    /* Colapsar bordes */
-}
-
-td {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 2em;
-    border-bottom: 1px solid #3a3536;
-}
+    li {
+        margin-top: 1em;
+        padding-left: 20px;
+    }
 
 
-tr:last-child td {
-    border-bottom: none;
+    li::marker {
+        color: #783e2b;
+        font-weight: bold;
+    }
+
+    .lista-morada::marker {
+        color: #6d2d47;
+    }
+
+
+    .omelette-image {
+        width: 100%;
+    }
+
+    .container-tiempo {
+        border-radius: 20px;
+        background-color: #fff7fc;
+        padding: 30px;
+    }
+
+    .titulo-2 {
+        color: #6d2d47;
+        margin-top: 0px;
+    }
+
+    .valor-nutricional {
+        font-size: large;
+    }
+
+    .valor {
+        color: #783e2b;
+        font-family: 'Oufit';
+        font-weight: bold;
+    }
+
+    table {
+        margin-top: -20px;
+        width: 100%;
+        /* Ancho de la tabla */
+        border-collapse: collapse;
+        /* Colapsar bordes */
+    }
+
+    td {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 2em;
+        border-bottom: 1px solid #3a3536;
+    }
+
+
+    tr:last-child td {
+        border-bottom: none;
+    }
+
+
+
 }
